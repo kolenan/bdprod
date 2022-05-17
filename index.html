@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRODUCTION</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <h1>Bienvenue à SAÏ Production</h1>
+
+    <table>
+        <tr>
+            <td>
+                <form onsubmit="event.preventDefault(); onFormSubmit()">
+
+                    <div>
+                        <!--  <label for="code">Student Code</label> -->
+                        <label for="code">Nom de l'ONG</label>
+                        <input type="text" name="code" id="code">
+                    </div>
+                    <div>
+                        <label for="fullname">Nom du projet* <label class="validation-error hide"  id="fullNameValidationError" >This Field is required</label> </label>
+                        <input type="text" name="fullname" id="fullname">
+                    </div>
+                    <div>
+                        <label for="gender">Catégorie ONG</label>
+                        <input type="text" name="gender" id="gender">
+                    </div>
+                    <div>
+                        <label for="code">Address</label>
+                        <input type="text" name="address" id="address">
+                    </div>
+                    <div>
+                        <label for="class">Réalisateur</label>
+                        <input type="text" name="class" id="class">
+                    </div>
+                    <div>
+                        <label for="school">Caméraman</label>
+                        <input type="text" name="school" id="school">
+                    </div>
+                    <div>
+                        <input class="form-action-buttons submit" type="submit" value="Submit">
+                    </div>
+
+                </form>
+            </td>
+            <td>
+                <table class="list" id="emplist">
+                    <thead>
+                        <tr>
+                            <td class="thead">Nom de l'ONG</td>
+                            <td class="thead">Nom du projet</td>
+                            <td class="thead">Catégorie ONG</td>
+                            <td class="thead">Address</td>
+                            <td class="thead">Réalisateur</td>
+                            <td class="thead">Caméraman</td>
+                            <td class="thead">Actions</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </table>
+    </div>
+
+
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
